@@ -2,6 +2,7 @@ body
 {
     margin: 0;
     padding: 0;
+    background-color: #F0F0F0;
 
 }
 
@@ -33,7 +34,7 @@ body
     color: #ffffff;
 
 }
-.head-title a 
+.head-title a , .highlights-title a
 {
     text-decoration: none;
     background-color: #E02C6D;
@@ -43,7 +44,7 @@ body
 }
 .head-title a:hover 
 {
-    transition: border-radius .7s linear;
+    transition: border-radius .7s ease-in-out;
     border-radius: 30px;
 }
 .players 
@@ -54,14 +55,67 @@ body
     grid-row-gap: 27px;
     width: 80%;
     margin-left: 10%;
+    
 }
 .player 
 {
     padding: 15px;
     box-shadow: 5px 5px 10px rgba(26, 26, 26, 0.2);
-    border-radius: 5px;
+    
 }
+.player-details
+{
+    overflow: hidden;
+}
+
 .player-details img 
 {
     height: 256px;
+}
+
+.highlights 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 150px 5%;
+}
+
+.highlights img 
+{
+    width: 40%;
+}
+
+.highlights h1 
+{
+    font-size: 48px;
+    margin: 0;
+}
+
+.highlights-title 
+{
+    width: 45%;
+}
+.highlights-title p
+{
+    margin-bottom: 24px;
+}
+footer 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > img 
+{
+    width: 35%;
+}
+
+footer > ul 
+{
+    display: flex;
+    list-style: none;
+    padding-right: 15px ;
 }
