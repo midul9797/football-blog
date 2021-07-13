@@ -18,11 +18,14 @@ body
 .head img 
 {
     width: 40%;
+    transition: transform 1.2s ease-out;
+    transform: translateX(-50px);
 }
 .head-title
 {
     width: 43%;
-    margin-left: 10%;
+    transition: transform 1.2s ease-out;
+    transform: translateX(100px);
 }
 .head-title h1 
 {
@@ -36,6 +39,12 @@ body
     background-color: #E02C6D;
     color: #ffffff;
     padding: 10px 24px;
+    border-radius: 0px;
+}
+.head-title a:hover 
+{
+    transition: border-radius .7s linear;
+    border-radius: 30px;
 }
 .players 
 {
