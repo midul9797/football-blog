@@ -117,5 +117,14 @@ footer > ul
 {
     display: flex;
     list-style: none;
+}
+
+footer > ul > li
+{
     padding-right: 15px ;
+}
+.fab
+{
+    color: grey;
+    font-size: 20px;
 }
