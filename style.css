@@ -12,6 +12,7 @@ body
     justify-content: space-around;
     align-items: center;
     height: 650px;
+    margin-bottom: 70px;
 
 }
 .head img 
@@ -35,4 +36,23 @@ body
     background-color: #E02C6D;
     color: #ffffff;
     padding: 10px 24px;
+}
+.players 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    width: 80%;
+    margin-left: 10%;
+}
+.player 
+{
+    padding: 15px;
+    box-shadow: 5px 5px 10px rgba(26, 26, 26, 0.2);
+    border-radius: 5px;
+}
+.player-details img 
+{
+    height: 256px;
 }
