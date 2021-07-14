@@ -16,17 +16,25 @@ body
     margin-bottom: 70px;
 
 }
-.head img 
+.head:hover .head-title 
+{
+    transition: transform 1.1s ease-out;
+    transform: translateX(100px);
+}
+.head:hover .head-img 
+{
+    transition: transform 1.1s ease-out;
+    transform: translateX(-50px);
+}
+.head-img 
 {
     width: 40%;
-    transition: transform 1.2s ease-out;
-    transform: translateX(-50px);
+
 }
 .head-title
 {
     width: 43%;
-    transition: transform 1.2s ease-out;
-    transform: translateX(100px);
+
 }
 .head-title h1 
 {
@@ -127,4 +135,53 @@ footer > ul > li
 {
     color: grey;
     font-size: 20px;
+}
+
+@media only screen and (max-width:668px) {
+    .head, .highlights 
+    {
+        flex-direction: column;
+        
+    }
+    .head:hover h1 + img 
+    {
+        transition: none;
+        transform: none;
+    }
+    .head-title 
+    {
+        width: 80%;
+    }
+    .players 
+    {
+        grid-template-columns: 1fr;
+        margin-left: 5%;
+    }
+
+    .head-img 
+    {
+        width: 330px;
+        height: 260px;
+    }
+    .head-title h1 
+    {
+        font-size: 35px;
+    }
+    .highlights h1 
+    {
+        font-size: 24px;
+    }
+    .highlights img 
+    {
+        width: 100%;
+    }
+    .highlights-title
+    {
+        width: 100%;
+        margin-bottom: 25%;
+    }
+    footer > img 
+    {
+        width: 65%;
+    }
 }
