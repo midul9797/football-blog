@@ -19,14 +19,14 @@ body
 .head-img 
 {
     width: 40%;
-    transition: transform 1.1s ease-out;
+    transition: transform 1s ease-out .5s;
     transform: translateX(-50px);
 
 }
 .head-title
 {
     width: 43%;
-    transition: transform 1.1s ease-out;
+    transition: transform 1s ease-out .5s;
     transform: translateX(100px);
 
 }
@@ -72,6 +72,7 @@ body
 
 .player-details img 
 {
+    width: 300px;
     height: 256px;
 }
 
@@ -112,7 +113,7 @@ footer
 
 footer > img 
 {
-    width: 35%;
+    width: 25%;
 }
 
 footer > ul 
@@ -139,8 +140,8 @@ footer > ul > li
     }
     .head-title, .head-img 
     {
-        transition: none;
-        transform: none;
+        transition: none !important;
+        transform: none !important;
     }
     .head-title 
     {
@@ -149,7 +150,7 @@ footer > ul > li
     .players 
     {
         grid-template-columns: 1fr;
-        margin-left: 5%;
+        justify-content: center;
     }
 
     .head-img 
@@ -160,6 +161,10 @@ footer > ul > li
     .head-title h1 
     {
         font-size: 35px;
+    }
+    .player-details img 
+    {
+        width: 90%;
     }
     .highlights h1 
     {
@@ -176,6 +181,50 @@ footer > ul > li
     }
     footer > img 
     {
-        width: 65%;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:992px) and (min-width:669px) {
+
+    .head-title, .head-img 
+    {
+        transition: none !important;
+        transform: none !important;
+    }
+    .head-title 
+    {
+        width: 50%;
+    }
+    .players 
+    {
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+
+    .head-title h1 
+    {
+        font-size: 50px;
+    }
+    .player-details img 
+    {
+        width: 100%;
+    }
+
+    .highlights h1 
+    {
+        font-size: 35px;
+    }
+    .highlights img 
+    {
+        width: 45%;
+    }
+    .highlights-title
+    {
+        width: 45%;
+    }
+    footer > img 
+    {
+        width: 30%;
     }
 }
